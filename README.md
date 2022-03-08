@@ -5,11 +5,12 @@ suitable for loading into OSmaps online or (probably!) other route mapping tools
 
 The utility also generates a list of distances and bearings.
 
-NOTE - this is NOT a tool you should actually use to plan routes with - it takes no
+*NOTE - this is NOT a tool you should actually use to plan routes with - it takes no
 account of the underlying map or ground features. It is at best good for checking,
 but I use it to load up a route plan so I can then go into 'detail mode' on what
-I'm expecting to see!
+I'm expecting to see!*
 
+```
 usage: rc2gpx.py [-h] [-o OUTFILE] [-v] [--map MAP] [--name NAME] [--desc DESCRIPTION] [-q] [--speed SPEED] [GR [GR ...]]
 
 Process a route-card into a gpx file
@@ -26,10 +27,11 @@ optional arguments:
   --desc DESCRIPTION  Name to use in gpx file
   -q
   --speed SPEED
+  ```
   
-  
-  Example:
-  
+##Example usage
+
+```
 %  python rc2gpx.py 421701 437723 393749 369727 336707 330703 321710 318713 314713 --name="Exped day 1"
 
 Using map square: TL
@@ -64,3 +66,4 @@ Processing coordinate TL 314713 ...lat:52.324, lon:-0.073  delta = -400.00, 0.00
 ├────────┼────────────┼───────────┼───────────────┼────────────────┼──────────────┤
 │ FINISH │ TL 314713  │           │               │                │              │
 ╘════════╧════════════╧═══════════╧═══════════════╧════════════════╧══════════════╛
+```
